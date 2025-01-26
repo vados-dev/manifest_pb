@@ -6,11 +6,14 @@
     <remote name="TeamWin"
             fetch="https://github.com/TeamWin"/>
 
+    <remote name="vados-dev"
+            fetch="https://github.com/vados-dev"/>
+
     <!-- TWRP lives in omnirom android-9.0 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-9.0"/>
-    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb" />
-    <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb">
+    <project path="vendor/pb" name="vendor_pb" remote="vados-dev" revision="pb-dev" />
+    <project path="vendor/utils" name="vendor_utils" remote="vados-dev" revision="pb-dev">
         <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
     </project>
     
