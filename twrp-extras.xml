@@ -9,10 +9,10 @@
 
     <!-- PBRP lives in PBRP -->
     <remove-project name="platform/bootable/recovery" />
-    <project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackRecoveryProject"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" revision="pb-go" remote="vados-dev"/>
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" revision="master" remote="PitchBlackRecoveryProject" />
     <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb" />
-    <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb">
+    <project path="vendor/utils" name="vendor_utils" remote="vados-dev" revision="Tess">
         <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
     </project>
 
