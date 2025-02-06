@@ -6,12 +6,15 @@
     <remote name="LineageOS"
             fetch="https://github.com/LineageOS"
             review="https://review.lineageos.org" />
+    
+    <remote  name="vados"
+           fetch="https://github.com/vados-dev" />
 
     <!-- PBRP lives in PBRP -->
     <remove-project name="platform/bootable/recovery" />
     <project path="bootable/recovery" name="android_bootable_recovery" revision="pb-go" remote="vados-dev"/>
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" revision="master" remote="PitchBlackRecoveryProject" />
-    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb" />
+    <project path="vendor/pb" name="vendor_pb" remote="vados-dev" revision="pb-dev" />
     <project path="vendor/utils" name="vendor_utils" remote="vados-dev" revision="Tess">
         <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
     </project>
